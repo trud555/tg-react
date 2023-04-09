@@ -21,7 +21,7 @@ const Form = () => {
         } else {
             tg.MainButton.show()
         }
-    }, [])
+    }, [nameClient, telephon])
 
     const onChangeNameClient = (e) => {
         setNameClient(e.target.value)
