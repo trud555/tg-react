@@ -7,7 +7,7 @@ import { useTelegram } from './hooks/useTelegram';
 
 function App() {
   
-  const {tg} = useTelegram()
+  const {tg,  onToggleButton} = useTelegram()
 
   useEffect(() => {
     tg.ready()  // что приложение проинициализировалось и можно его отрисовывать
@@ -18,6 +18,7 @@ function App() {
   return (
     <div className="App">
       <Header/>
+      <button onClick={onToggleButton}>Главная кнопка</button>
     </div>
   );
 }
